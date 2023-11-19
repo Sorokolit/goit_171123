@@ -19,7 +19,7 @@ body {
     height: 100%;
     width: 100%;
     /*background: url(/storage/emulated/0/Documents/go_it_web_171123/resources/Sumy/background.jpg);*/
-    background: url(https://drive.google.com/file/d/189V1Zb0TYN_1Uk5uQhiz83FC8aYOjQVO/view?usp=drivesdk);
+    background: url('https://drive.google.com/file/d/189V1Zb0TYN_1Uk5uQhiz83FC8aYOjQVO/view?usp=drivesdk');
     background-size: cover;
     padding-top: 32px;
     padding-left: 32px;
