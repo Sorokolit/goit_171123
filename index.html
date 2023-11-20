@@ -7,8 +7,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Початок вставки стилів слайдеру-->
+        <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
+    <!-- Кінець вставки стилів слайдеру-->
         
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="modal.css"/>
+
+        
         
         <title>City Sumy</title>
         
@@ -36,22 +45,104 @@
                 <button class="form-submit-btn" id="form-submit-btn">Підписатись</button>
             </form>
         </section>
-        
-        
-        <!-- TO DELL 
-                <section class="form-page">
-            <form action="#" class="form">
-                <h2 class="form-title">Підпишись на новини міста</h2>
-                <input type="text" class="form-field" id="user-name" name="Ім'я користувача" placeholder="Ім'я"/>
-                <input type="email" class="form-field" name="Email користувача" id="user-email" placeholder="Email"/>
-                <button class="form-submit-btn" id="form-submit-btn">Підписатись</button>
-            </form>
+        <section class="gallery-page">
+            <h2 class="gallery-title">Суми = маленьке місто великих вражень</h2>
+            <div class="wrapper">
+                <div class="gallery">
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="0">
+                        <img src="https://docs.google.com/uc?id=17nnnsjUZzNn-Km6vZR8K9njys-Ez-qc3" alt="Sumy photo 1" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="1">
+                        <img src="https://docs.google.com/uc?id=17q9apJXZDadk05Eko4E1HZxkIGq1UiaM" alt="Sumy photo 2" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="2">
+                        <img src="https://docs.google.com/uc?id=17sKYWGx8MWWDN_Iw8nwxKPrq6MWdwtMM" alt="Sumy photo 3" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="3">
+                        <img src="https://docs.google.com/uc?id=17zsGBsg6BnYqxwTnvusVwaWXhoPb4msT" alt="Sumy photo 4" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="4">
+                        <img src="https://docs.google.com/uc?id=18-UgZhP7MDzOKjk6fBIypKRRouxXouZg" alt="Sumy photo 5" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="5">
+                        <img src="https://docs.google.com/uc?id=180R8C8Sdd93TLIhAY6SFqc1o4jCYaOy5" alt="Sumy photo 6" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="6">
+                        <img src="https://docs.google.com/uc?id=180h-Hn_kHj8cO7A0lPdP57SZqb1QvagJ" alt="Sumy photo 7" class="city-photo"/>
+                    </button>
+                    
+                    <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="7">
+                        <img src="https://docs.google.com/uc?id=1858WM-gh3WpYoZBu0uIRM-p_jRyTMDaU" alt="Sumy photo 8" class="city-photo"/>
+                    </button>
+                </div>
+            </div>
         </section>
-        -->
+        
+        <!-- Modal window -->
+<div class="modal micromodal-slide" id="modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <header class="modal__header">
+                <h2 class="modal__title" id="modal-title">
+                    Cвітлини міста Суми
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-content">
+                <div class="splide" role="group" aria-label="city-gallery">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=17nnnsjUZzNn-Km6vZR8K9njys-Ez-qc3" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=17q9apJXZDadk05Eko4E1HZxkIGq1UiaM" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=17sKYWGx8MWWDN_Iw8nwxKPrq6MWdwtMM" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=17zsGBsg6BnYqxwTnvusVwaWXhoPb4msT" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=18-UgZhP7MDzOKjk6fBIypKRRouxXouZg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=180R8C8Sdd93TLIhAY6SFqc1o4jCYaOy5" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=180h-Hn_kHj8cO7A0lPdP57SZqb1QvagJ" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://docs.google.com/uc?id=1858WM-gh3WpYoZBu0uIRM-p_jRyTMDaU" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+        <!-- Modal window -->
+        
+        
+    <!-- Початок вставки бібліотек модального вікна та галереї-->
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- Кінець вставки бібліотек модального вікна та галереї-->
+        
+        
         
 <!-- JS -->
-<script src="form.js">
-    
-</script>
+<script src="form.js"></script>   
+<script src="slideandmodal.js"></script>
     </body>
 </html>
